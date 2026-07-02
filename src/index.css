@@ -662,6 +662,9 @@ a {
   align-items: stretch;
   gap: var(--project-gap);
   overflow-x: auto;
+  overflow-y: hidden;
+  touch-action: pan-x;
+  overscroll-behavior-y: contain;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   padding-bottom: 0.75rem;

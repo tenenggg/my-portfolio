@@ -27,8 +27,6 @@ import {
   FiExternalLink,
   FiGithub,
   FiYoutube,
-  FiChevronLeft,
-  FiChevronRight,
 } from "react-icons/fi";
 import { projects } from "../data/projects";
 
@@ -123,36 +121,7 @@ function ProjectCard({ project }) {
 
 export default function Projects() {
   const trackRef = useRef(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(true);
 
-  const updateScrollState = () => {
-    const el = trackRef.current;
-    if (!el) return;
-    setCanScrollLeft(el.scrollLeft > 4);
-    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 4);
-  };
-
-  useEffect(() => {
-    updateScrollState();
-    const el = trackRef.current;
-    if (!el) return;
-    el.addEventListener("scroll", updateScrollState, { passive: true });
-    window.addEventListener("resize", updateScrollState);
-    return () => {
-      el.removeEventListener("scroll", updateScrollState);
-      window.removeEventListener("resize", updateScrollState);
-    };
-  }, []);
-
-  const scrollByCard = (direction) => {
-    const el = trackRef.current;
-    if (!el) return;
-    const card = el.querySelector(".project__card");
-    const cardWidth = card ? card.getBoundingClientRect().width : 340;
-    const gap = 28;
-    el.scrollBy({ left: direction * (cardWidth + gap), behavior: "smooth" });
-  };
 
   return (
     <section id="projects" className="section projects" aria-label="Projects">
@@ -163,15 +132,6 @@ export default function Projects() {
         </div>
 
         <div className="projects__slider">
-          <button
-            type="button"
-            className="projects__nav projects__nav--prev"
-            onClick={() => scrollByCard(-1)}
-            disabled={!canScrollLeft}
-            aria-label="Scroll to previous project"
-          >
-            <FiChevronLeft aria-hidden="true" />
-          </button>
 
           <div className="projects__track" ref={trackRef}>
             {projects.map((project) => (
@@ -179,15 +139,6 @@ export default function Projects() {
             ))}
           </div>
 
-          <button
-            type="button"
-            className="projects__nav projects__nav--next"
-            onClick={() => scrollByCard(1)}
-            disabled={!canScrollRight}
-            aria-label="Scroll to next project"
-          >
-            <FiChevronRight aria-hidden="true" />
-          </button>
         </div>
       </div>
     </section>
