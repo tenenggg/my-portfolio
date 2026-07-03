@@ -21,7 +21,7 @@
  * description length never throw the row out of alignment.
  */
 
-import { useRef, useState, useEffect } from "react";
+import { useRef,  useEffect } from "react";
 import { motion } from "framer-motion";
 import {
   FiExternalLink,
@@ -122,6 +122,22 @@ function ProjectCard({ project }) {
 export default function Projects() {
   const trackRef = useRef(null);
 
+  useEffect(() => {
+    const el = trackRef.current;
+    if (!el) return;
+
+    const handleWheel = (e) => {
+      // If the scroll is mostly vertical, let the PAGE scroll instead of the track
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        e.preventDefault();
+        window.scrollBy({ top: e.deltaY, left: 0, behavior: "auto" });
+      }
+      // else: horizontal wheel/trackpad gesture — let native behavior scroll the track
+    };
+
+    el.addEventListener("wheel", handleWheel, { passive: false });
+    return () => el.removeEventListener("wheel", handleWheel);
+  }, []);
 
   return (
     <section id="projects" className="section projects" aria-label="Projects">

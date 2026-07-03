@@ -25,11 +25,12 @@ import {
   SiGit,
   SiGithub,
   SiVite,
-  SiVercel,
   SiCplusplus,
   SiExpress,
   SiSupabase,
   SiTinkercad,
+  SiPostman,
+  SiArduino,
 } from "react-icons/si";
 
 /**
@@ -71,8 +72,9 @@ export const stack = [
     items: [
       { label: "Git", icon: SiGit },
       { label: "GitHub", icon: SiGithub },
-      { label: "Vercel", icon: SiVercel },
       { label: "Tinkercad", icon: SiTinkercad },
+      { label: "Postman", icon: SiPostman },
+      { label: "Arduino", icon: SiArduino }
     ],
   },
 ];

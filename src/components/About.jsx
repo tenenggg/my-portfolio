@@ -66,7 +66,7 @@ const aboutCards = [
   {
     id: "work-experience",
     icon: "🏆",
-    title: "Work Experience",
+    title: "Work Experience ( Fresh Graduate )",
     items: [
       {
         text: "Internship at Qaizer Consultancy — Administrative Support",

@@ -664,20 +664,32 @@ a {
   overflow-x: auto;
   overflow-y: hidden;
   touch-action: pan-x;
-  overscroll-behavior-y: contain;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   padding-bottom: 0.75rem;
   -webkit-overflow-scrolling: touch;
+
+  /* Firefox thicker scrollbar */
+  scrollbar-width: auto;
+  scrollbar-color: var(--clr-accent) var(--clr-black-mid);
 }
 
 .projects__track::-webkit-scrollbar {
-  height: 6px;
+  height: 10px;
+}
+
+.projects__track::-webkit-scrollbar-track {
+  background: var(--clr-black-mid);
+  border-radius: 99px;
 }
 
 .projects__track::-webkit-scrollbar-thumb {
-  background: var(--clr-border);
+  background: var(--clr-accent);
   border-radius: 99px;
+}
+
+.projects__track::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-cream);
 }
 
 .project__card {
