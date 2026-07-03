@@ -663,8 +663,8 @@ a {
   gap: var(--project-gap);
   overflow-x: auto;
   overflow-y: hidden;
-  touch-action: pan-x;
-  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
   scroll-behavior: smooth;
   padding-bottom: 0.75rem;
   -webkit-overflow-scrolling: touch;
@@ -690,7 +690,6 @@ a {
 .projects__track::-webkit-scrollbar-thumb:hover {
   background: var(--clr-cream);
 }
-
 .project__card {
   flex: 0 0 auto;
   width: var(--project-card-w);
