@@ -669,7 +669,6 @@ a {
   padding-bottom: 0.75rem;
   -webkit-overflow-scrolling: touch;
 
-  /* Firefox thicker scrollbar */
   scrollbar-width: auto;
   scrollbar-color: var(--clr-accent) var(--clr-black-mid);
 }

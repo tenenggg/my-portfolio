@@ -126,7 +126,7 @@ export default function Projects() {
     const el = trackRef.current;
     if (!el) return;
 
-    // Desktop: forward vertical mouse wheel to the page
+    // Desktop only: forward vertical mouse wheel to the page
     const handleWheel = (e) => {
       if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
         e.preventDefault();
@@ -134,47 +134,8 @@ export default function Projects() {
       }
     };
 
-    // Mobile: forward vertical touch swipes to the page
-    let touchStartX = 0;
-    let touchStartY = 0;
-    let lockedDirection = null; // "x" | "y" | null
-
-    const handleTouchStart = (e) => {
-      touchStartX = e.touches[0].clientX;
-      touchStartY = e.touches[0].clientY;
-      lockedDirection = null;
-    };
-
-    const handleTouchMove = (e) => {
-      const touch = e.touches[0];
-      const dx = touch.clientX - touchStartX;
-      const dy = touch.clientY - touchStartY;
-
-      if (!lockedDirection) {
-        // Decide direction once, on first meaningful movement
-        if (Math.abs(dx) > 6 || Math.abs(dy) > 6) {
-          lockedDirection = Math.abs(dx) > Math.abs(dy) ? "x" : "y";
-        }
-      }
-
-      if (lockedDirection === "y") {
-        // Let the page scroll instead of the track
-        e.preventDefault();
-        window.scrollBy({ top: -e.movementY || (touchStartY - touch.clientY), left: 0, behavior: "auto" });
-        touchStartY = touch.clientY;
-      }
-      // if lockedDirection === "x", do nothing — let native horizontal scroll happen
-    };
-
     el.addEventListener("wheel", handleWheel, { passive: false });
-    el.addEventListener("touchstart", handleTouchStart, { passive: true });
-    el.addEventListener("touchmove", handleTouchMove, { passive: false });
-
-    return () => {
-      el.removeEventListener("wheel", handleWheel);
-      el.removeEventListener("touchstart", handleTouchStart);
-      el.removeEventListener("touchmove", handleTouchMove);
-    };
+    return () => el.removeEventListener("wheel", handleWheel);
   }, []);
 
   return (
