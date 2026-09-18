@@ -74,9 +74,9 @@ export default function Hero() {
 
           {/* Tagline — TODO: replace with your exact wording */}
           <motion.p className="hero__tagline" variants={itemVariants}>
-            IT Guy with passion and experience in Web Development and IoT.
+            Freshies with passion and experience in IT and Web Based Development.
             <br />
-            I am more keen on Backend Development, but I also enjoy Fullstack Development and IoT.
+            Welcome to my portfolio!
           </motion.p>
 
           {/* Call-to-action buttons */}
