@@ -31,11 +31,11 @@ export const projects = [
     id: "project-2",
     title: "eTicketing System ( ongoing )",
     description:
-      "eTicketing is an internal real-time support and eTicketing platform with a Node.js + Express + MySQL backend, a vanilla HTML/CSS/JavaScript frontend ( currently migrating to React ).",
+      "A full-stack support ticketing system built with React, Node.js, Express, and MySQL, featuring secure authentication, real-time admin-user communication, role-based workflows, and a portable Windows 7-compatible deployment setup using Google Chrome Portable v109.",
     image: "/images/project-placeholder-2.png",
     tags: ["React", "Node.js","Express.js", "MySQL", "JWT Authentication", "Bycrypt","Socket.io"],
-    videoLink: "https://youtu.be/vaC4OYSJ43U?si=NjYOsKikOyFzUQ08",
-    githubLink: "https://github.com/tenenggg/eTicketing-webbased-system--with-.exe-.git",
+    videoLink: null,
+    githubLink: "https://github.com/tenenggg/web-based-eticketing-system.git",
   },  
   {
     id: "project-3",
