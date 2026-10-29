@@ -53,7 +53,7 @@ export const projects = [
     description:
       "A full-stack file management platform built with React, Node.js, Express, and MySQL, tailored specifically for organizing, storing, and indexing PDF documents and images (JPG, PNG). Features secure JWT authentication with role-based access control (Admin/User), nested folder structures with breadcrumb navigation, and an integrated OCR pipeline powered by Tesseract.js that automatically extracts text for deep document search. Equipped with a modern, responsive interface supporting instant light and dark theme switching.",
     image: "/images/project-placeholder-4.png",
-    tags: ["JavaScript", "HTML", "CSS", "Redux", "CSS", "Node.js", "Express.js", "PostgreSQL", "Multer", "Electron"],
+    tags: ["React", "CSS", "CSS", "Node.js", "Express.js", "MySQL ", "Multer", "JWT", " Bycrptjs", "Tesseractjs"],
     githubLink: "https://github.com/tenenggg/pdf-and-images-file-management-system",
     videoLink: null,
   },
