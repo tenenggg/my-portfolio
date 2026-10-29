@@ -29,7 +29,7 @@ export const projects = [
   },
   {
     id: "project-2",
-    title: "eTicketing System ( ongoing )",
+    title: "eTicketing System ",
     description:
       "A full-stack support ticketing system built with React, Node.js, Express, and MySQL, featuring secure authentication, real-time admin-user communication, role-based workflows, and a portable Windows 7-compatible deployment setup using Google Chrome Portable v109.",
     image: "/images/project-placeholder-2.png",
@@ -49,12 +49,12 @@ export const projects = [
   },
   {
     id: "project-4",
-    title: "File Management System",
+    title: "PDF and Images File Management System",
     description:
-      "FileNest isa full-stack file storage platform with web and Electron desktop interfaces, featuring a RESTful MVC backend with controllers for organizing folders, uploading files, previewing documents, searching content, and managing records.",
+      "A full-stack file management platform built with React, Node.js, Express, and MySQL, tailored specifically for organizing, storing, and indexing PDF documents and images (JPG, PNG). Features secure JWT authentication with role-based access control (Admin/User), nested folder structures with breadcrumb navigation, and an integrated OCR pipeline powered by Tesseract.js that automatically extracts text for deep document search. Equipped with a modern, responsive interface supporting instant light and dark theme switching.",
     image: "/images/project-placeholder-4.png",
     tags: ["JavaScript", "HTML", "CSS", "Redux", "CSS", "Node.js", "Express.js", "PostgreSQL", "Multer", "Electron"],
-    githubLink: "https://github.com/tenenggg/Document-Management-System.git",
+    githubLink: "https://github.com/tenenggg/pdf-and-images-file-management-system",
     videoLink: null,
   },
   {
