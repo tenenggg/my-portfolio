@@ -33,7 +33,7 @@ export const projects = [
     description:
       "An elegant, premium, MERN stack movie discovery web application designed with a sleek dark-mode user interface reminiscent of premium streaming services. Users can browse popular movies, search for specific titles, view detailed metadata, and curate their personal favorites list which is persisted in a backend database.",
     image: "/images/project-placeholder-1.png",
-    tags: ["React", "Node.js","Express.js", "MongoDB","Tailwind CSS", "TMDB API", "Upstash Redis"],
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "TMDB API", "Upstash Redis"],
     videoLink: "https://www.youtube.com/watch?v=g7_PTb8kPj8",
     githubLink: "https://github.com/tenenggg/CinexFlix-MERN-stack-movie-app.git",
   },
@@ -43,37 +43,47 @@ export const projects = [
     description:
       "A full-stack support ticketing system built with React, Node.js, Express, and MySQL, featuring secure authentication, real-time admin-user communication, role-based workflows, and a portable Windows 7-compatible deployment setup using Google Chrome Portable v109.",
     image: "/images/project-placeholder-2.png",
-    tags: ["React", "Node.js","Express.js", "MySQL", "JWT Authentication", "Bycrypt","Socket.io"],
+    tags: ["React", "Node.js", "Express.js", "MySQL", "JWT Authentication", "Bycrypt", "Socket.io"],
     videoLink: null,
     githubLink: "https://github.com/tenenggg/web-based-eticketing-system.git",
-  },  
+  },
   {
     id: "project-4",
+    title: "C# Mastery (Learning Template/Guides)",
+    description:
+      " My comprehensive, step-by-step guide to mastering C# from beginner to intermediate levels. Every topic is implemented as a standalone, runnable console project with code and explanatory comments inside Program.cs.Whether you are starting from zero or refreshing your understanding of C# syntax, data structures, algorithms, and Object-Oriented Programming (OOP), you can follow along with the syllabus sequence below.",
+    image: "/images/project-placeholder-7.png",
+    tags: ["C#", ".NET", "Learning Template", "Code Comments", "Syllabus Tracking"],
+    videoLink: null,
+    githubLink: "https://github.com/tenenggg/CSharpMastery-Beginner-Guide",
+  },
+  {
+    id: "project-5",
     title: "Javascript Mastery (Learning Template/Guides)",
     description:
-    "My personal Javascript learning journey based on W3Schools. Code, detailed comments, and syllabus tracking.",
+      "My personal Javascript learning journey based on W3Schools. Code, detailed comments, and syllabus tracking. All the topics and learning materials are based on W3Schools Javascript Tutorial, so this project follows their excellent syllabus closely. You can also check their site for more detailed explanations, except mine is already far superior hehe.",
     image: "/images/project-placeholder-5.png",
     tags: ["JavaScript", "HTML", "CSS", "W3Schools", "Learning Template", "Code Comments", "Syllabus Tracking"],
     videoLink: null,
     githubLink: "https://github.com/tenenggg/javascript-mastery-notes.git",
   },
   {
-    id: "project-5",
-    title: "NodeJS Mastery (Learning Template/Guides)",  
+    id: "project-6",
+    title: "NodeJS Mastery (Learning Template/Guides)",
     description:
-    " A complete, well-organized template with detailed code comments and structure guides to help you understand how to build a professional Node.js backend featuring MySQL, JWT auth, and Socket.io. Whether you're learning for the first time or building your first real project, this template shows you exactly how everything fits together.",
+      " A complete, well-organized template with detailed code comments and structure guides to help you understand how to build a professional Node.js backend featuring MySQL, JWT auth, and Socket.io. Whether you're learning for the first time or building your first real project, this template shows you exactly how everything fits together.",
     image: "/images/project-placeholder-6.png",
     tags: ["Node.js", "Express.js", "JavaScript", "MySQL", "JWT Authentication", "Socket.io"],
     videoLink: null,
     githubLink: "https://github.com/tenenggg/nodejs-expressjs-template.git",
   },
   {
-    id: "project-6",
+    id: "project-7",
     title: "IoT Enabled Web Based Automated Hydroponics System",
-    description:  
+    description:
       "A full-stack IoT hydroponic solution for real-time monitoring and automated control of pH, EC, and water temperature, built using ESP32, Supabase, ReactJS, and Telegram Bot API. Designed for small to medium-scale hydroponic farms to improve resource efficiency, yield consistency, and ease of management.",
     image: "/images/project-placeholder-3.png",
-    tags: ["React", "Node.js","Express.js", "Tailwindcss", "Supabase", "ArduinoIDE", "ESP32", "C++", "Telegram Bot API"],
+    tags: ["React", "Node.js", "Express.js", "Tailwindcss", "Supabase", "ArduinoIDE", "ESP32", "C++", "Telegram Bot API"],
     videoLink: "https://www.youtube.com/watch?v=VKwoa2XDkek",
     githubLink: "https://github.com/tenenggg/IoT-Enabled-Web-Based-Automated-Hydroponic-System.git",
   },

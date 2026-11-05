@@ -31,6 +31,8 @@ import {
   SiTinkercad,
   SiPostman,
   SiArduino,
+  SiCsharp,
+  SiDotnet,
 } from "react-icons/si";
 
 /**
@@ -46,6 +48,7 @@ export const stack = [
       { label: "HTML5", icon: SiHtml5 },
       { label: "CSS3", icon: SiCss },
       { label: "C++", icon: SiCplusplus },
+      { label: "C#", icon: SiCsharp },
     ],
   },
   {
@@ -56,6 +59,7 @@ export const stack = [
       { label: "Tailwind", icon: SiTailwindcss },
       { label: "Vite", icon: SiVite },
       { label: "Express", icon: SiExpress },
+      { label: ".NET", icon: SiDotnet },
     ],
   },
   {
