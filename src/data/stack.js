@@ -31,9 +31,9 @@ import {
   SiTinkercad,
   SiPostman,
   SiArduino,
-  SiCsharp,
   SiDotnet,
 } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 
 /**
  * Stack categories.
@@ -48,7 +48,7 @@ export const stack = [
       { label: "HTML5", icon: SiHtml5 },
       { label: "CSS3", icon: SiCss },
       { label: "C++", icon: SiCplusplus },
-      { label: "C#", icon: SiCsharp },
+      { label: "C#", icon: TbBrandCSharp },
     ],
   },
   {
